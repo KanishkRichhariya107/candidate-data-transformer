@@ -1,3 +1,3 @@
 # candidate-data-transformer
-This is Eightdold ai assignment
+This is eightfold ai assignment
 
