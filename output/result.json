@@ -1,0 +1,96 @@
+{
+  "matched": true,
+  "candidate": {
+    "fullName": "Kanishk Richhariya",
+    "emails": [
+      "kanishkrichhariya10@gmail.com"
+    ],
+    "phones": [
+      "8109972175"
+    ],
+    "skills": [
+      "Node.js",
+      "HTML",
+      "Languages: C, C++, JavaScript, Python, PHP",
+      "Core Skills: Data Structures and Algorithms, Full Stack Development, Software Development, Database Management",
+      "Web & Frameworks: HTML, CSS, MERN Stack,GraphQL, Prisma",
+      "Tools & Platforms: Git, GitHub, Docker,Postman, XAMPP, MySQL,PostgreSQL,Jupyter Notebook,AWS",
+      "AI/ML: Machine Learning, Deep Learning"
+    ],
+    "education": [
+      "Jaypee Institute of Information Technology, Noida Expected May 2027",
+      "B.Tech in Computer Science",
+      "GPA: 9.0/10.0"
+    ],
+    "experience": [
+      "Software Engineer Intern, Bluestock (Certificate) 2 Dec 2024 – Jan 2025",
+      "Worked on the development of multiple production-level software systems. Implemented secure authentication mech-",
+      "anisms including LinkedIn OAuth and Microsoft OAuth, and developed backend services with efficient database inte-",
+      "gration using PostgreSQL."
+    ],
+    "audit": {
+      "confidence": {
+        "fullName": 1,
+        "emails": 0.98,
+        "phones": 0.98,
+        "location": 0.8,
+        "skills": 0.98,
+        "education": 0.95,
+        "experience": 0.95,
+        "github": 0,
+        "linkedin": 0
+      },
+      "provenance": {
+        "fullName": [
+          "csv",
+          "resume"
+        ],
+        "emails": [
+          "csv",
+          "resume"
+        ],
+        "phones": [
+          "csv",
+          "resume"
+        ],
+        "location": [
+          "csv"
+        ],
+        "skills": [
+          "csv",
+          "resume"
+        ],
+        "education": [
+          "resume"
+        ],
+        "experience": [
+          "resume"
+        ],
+        "github": [],
+        "linkedin": []
+      },
+      "resolution": {
+        "fullName": {
+          "value": "Kanishk Richhariya",
+          "source": "both",
+          "reason": "matched"
+        },
+        "location": {
+          "value": "M.P.",
+          "source": "csv",
+          "reason": "single_source"
+        },
+        "github": {
+          "value": null,
+          "source": null,
+          "reason": "missing"
+        },
+        "linkedin": {
+          "value": null,
+          "source": null,
+          "reason": "missing"
+        }
+      }
+    }
+  }
+}

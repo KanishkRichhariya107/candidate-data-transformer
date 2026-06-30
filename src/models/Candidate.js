@@ -16,7 +16,8 @@ class Candidate {
         };
         this.audit = {
             confidence: {},
-            provenance: {}
+            provenance: {},
+            resolution: {}
         };
         this.errors = [];
     }

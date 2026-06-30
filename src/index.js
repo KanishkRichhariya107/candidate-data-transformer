@@ -1,11 +1,12 @@
 import Pipeline from "./pipeline/Pipeline.js";
-import ResumeAdapter from "./adapters/ResumeAdapter.js";
+import fs from "fs";
 
 const pipeline = new Pipeline();
-const candidates = await pipeline.processCSV("./input/candidates.csv");
-const adapter = new ResumeAdapter();
-const text = await adapter.extract("./input/Kanishk_Richhariya_Resume.pdf");
-const candidate = adapter.buildCandidate(text);
+const result = await pipeline.process("./input/candidates.csv","./input/Kanishk_Richhariya_Resume.pdf");
+console.dir(result, { depth: null });
+fs.writeFileSync(
+    "./output/result.json",
+    JSON.stringify(result, null, 2)
+);
 
-console.log(candidate);
-console.log(candidates);
+console.log("✅ Output saved to output/result.json");

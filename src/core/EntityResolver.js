@@ -1,5 +1,4 @@
 class EntityResolver {
-
     isSameCandidate(candidate1, candidate2) {
         if (
             candidate1.emails.some(email =>
@@ -20,5 +19,4 @@ class EntityResolver {
     }
 
 }
-
 export default EntityResolver;
