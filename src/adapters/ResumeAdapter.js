@@ -98,14 +98,28 @@ extractName(sections){
     return matches ? [...new Set(matches)] : [];
     }
 
-extractSkills(sections){
+extractSkills(sections) {
 
-    if(!sections.skills)
+    if (!sections.skills)
         return [];
 
-    return sections.skills
+    const skills = [];
+
+    for (const line of sections.skills) {
+
+        const cleaned = line.includes(":")
+            ? line.split(":")[1]
+            : line;
+
+        cleaned
+            .split(",")
             .map(skill => skill.trim())
-            .filter(Boolean);
+            .filter(Boolean)
+            .forEach(skill => skills.push(skill));
+
+    }
+
+    return [...new Set(skills)];
 
 }
 
@@ -127,19 +141,19 @@ extractExperience(sections){
 
 }
 
-extractGithub(text){
+extractGithub(text) {
 
     const match = text.match(
-        /https?:\/\/(www\.)?github\.com\/[^\s]+/i
+        /(https?:\/\/)?(www\.)?github\.com\/[^\s]+/i
     );
 
     return match ? match[0] : null;
 
 }
-extractLinkedIn(text){
+extractLinkedIn(text) {
 
     const match = text.match(
-        /https?:\/\/(www\.)?linkedin\.com\/[^\s]+/i
+        /(https?:\/\/)?(www\.)?linkedin\.com\/[^\s]+/i
     );
 
     return match ? match[0] : null;
