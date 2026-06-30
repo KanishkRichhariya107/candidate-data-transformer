@@ -1,0 +1,31 @@
+{
+  "name": "candidate-data-transformer",
+  "version": "1.0.0",
+  "description": "This is eightfold ai assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node src/index.js",
+    "dev":"nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KanishkRichhariya107/candidate-data-transformer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/KanishkRichhariya107/candidate-data-transformer/issues"
+  },
+  "homepage": "https://github.com/KanishkRichhariya107/candidate-data-transformer#readme",
+  "dependencies": {
+    "csv-parser": "^3.2.1",
+    "pdf-parse": "^2.4.5",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
