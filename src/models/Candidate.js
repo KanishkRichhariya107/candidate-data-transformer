@@ -17,6 +17,7 @@ class Candidate {
             confidence: {},
             provenance: {}
         };
+        this.errors = [];
     }
 }
 
