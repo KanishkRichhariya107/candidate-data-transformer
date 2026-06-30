@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node src/index.js",
-    "dev":"nodemon src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/KanishkRichhariya107/candidate-data-transformer#readme",
   "dependencies": {
     "csv-parser": "^3.2.1",
-    "pdf-parse": "^2.4.5",
+    "pdf-parse-new": "^2.1.0",
     "zod": "^4.4.3"
   },
   "devDependencies": {

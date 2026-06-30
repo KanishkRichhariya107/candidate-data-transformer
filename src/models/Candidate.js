@@ -2,6 +2,7 @@ class Candidate {
     constructor() {
 
         this.id = null;
+        this.source=null;
         this.fullName = null;
         this.emails = [];
         this.phones = [];

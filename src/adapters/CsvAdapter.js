@@ -23,6 +23,7 @@ class CSVAdapter extends BaseAdapter {
         {
             candidate.skills = row.Skills.split(",").map(skill => skill.trim());
         }
+        candidate.source = "csv";
         return candidate;
     }
 }
